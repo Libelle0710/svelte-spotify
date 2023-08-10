@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+@function toRem($value) {
+	@return #{math.div($value, 16)}rem; //receive a value in pixels and convert it to rem 
+                                        //by returning the value divided by 16.
+}
